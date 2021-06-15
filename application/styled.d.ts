@@ -1,3 +1,4 @@
+import React from "react";
 import "styled-components";
 
 interface IPalette {
@@ -6,9 +7,32 @@ interface IPalette {
 }
 declare module "styled-components" {
   export interface DefaultTheme {
-    text: string;
-    background: string;
-    border: string;
-    hover: string;
+    breakpoints: string[];
+    fontSizes: number[];
+    colors: {
+      normal: string;
+      background: string;
+    };
+
+    fonts: {
+      body: string;
+      heading: string;
+      monospace: string;
+    };
+
+    fontWeights: {
+      body: React.ReactText;
+      heading: React.ReactText;
+      bold: React.ReactText;
+    };
+
+    lineHeights: {
+      body: React.ReactText;
+      heading: React.ReactText;
+    };
+    shadows: {
+      small: string;
+      large: string;
+    };
   }
 }

@@ -6,7 +6,7 @@ import { Base, Light } from "~/global/theme";
 function App() {
   return (
     <ThemeProvider theme={Light}>
-      asldkjasjkldhakshjd
+      <h1 style={{ padding: '100px', fontSize: 128 }} >Text</h1>
       <Base />
     </ThemeProvider>
   );

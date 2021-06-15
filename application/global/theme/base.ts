@@ -8,10 +8,14 @@ const Reset = createGlobalStyle`
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: min(max(1rem, 4vw), 22px);
   font: inherit;
   font-family: Rubik;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.normal};
+  }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
