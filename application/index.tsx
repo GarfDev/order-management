@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-console.log("Hello from tsx!");
+// Import Internal Resource
+import App from "./app";
 
 const rootNote = document.getElementById("root");
-ReactDOM.render(<p>Hello</p>, rootNote);
+ReactDOM.render(<App />, rootNote);

@@ -5,13 +5,13 @@
   "author": "Garfield is on board. <GarfDev.13@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel ./public/index.html",
-    "build": "parcel build ./public/index.html"
+    "dev": "parcel ./application/index.html",
+    "build": "parcel build ./application/index.html"
   },
   "dependencies": {
-    "reac": "^0.0.0",
-    "react": "^17.0.2",
+    "react": "^16.14.0 || ^17.0.0",
     "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0",
     "typescript": "^4.2.4"
   },
   "devDependencies": {
@@ -19,6 +19,7 @@
     "@types/parcel-env": "^0.0.0",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
+    "@types/styled-components": "^5.1.10",
     "parcel-bundler": "^1.12.5"
   }
 }
