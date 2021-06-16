@@ -13,15 +13,16 @@ const Reset = createGlobalStyle`
   font-family: Rubik;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
-  background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.normal};
   }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1.5;
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.normal};
+   }
 
 ol, ul {
   list-style: none; }
